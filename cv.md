@@ -5,7 +5,7 @@
 <hr>
 
 ## __Contact information__:
-|||
+| | |
 |-|-|
 |__Phone:__|[+375-333-935-935](tel:+375333935935 "call")|
 |__E-mail:__|[dev@koiro.pro](mailto:dev@koiro.pro "write")|
