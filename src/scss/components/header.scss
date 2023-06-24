@@ -1,4 +1,109 @@
 @import '../_mixins.scss';
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.10);
+  // background: var(--black-color);
+  mix-blend-mode: lighten;
+  z-index: 6;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.logo {
+  display: flex;
+  width: fit-content;
+  outline: none;
+
+  &__svg {
+    display: flex;
+    stroke: var(--white-color);
+    width: rem(120);
+    height: auto;
+    aspect-ratio: 120/51;
+    transition: stroke .15s var(--cubic-bezier),
+      opacity .15s var(--cubic-bezier);
+  }
+
+  @include hover {
+    & svg {
+      stroke: var(--primary-color);
+      opacity: .8;
+    }
+  }
+
+  &:focus {
+    & svg {
+      stroke: var(--primary-color);
+      opacity: .8;
+    }
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: rem(8);
+  }
+}
+
+
+.social {
+  margin-left: auto;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: rem(32);
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: rem(72);
+    height: 100%;
+    text-decoration: none;
+
+    @include hover {
+
+      & .social__text {
+        background: var(--white-color);
+        color: var(--black-color);
+      }
+    }
+
+    &:focus {
+      & .social__text {
+        background: var(--white-color);
+        color: var(--black-color);
+      }
+    }
+  }
+
+  &__text {}
+
+  &__icon {
+    position: absolute;
+    right: 0;
+    top: rem(-15);
+    display: flex;
+    width: rem(72);
+    height: rem(72);
+    mix-blend-mode: lighten;
+  }
 }

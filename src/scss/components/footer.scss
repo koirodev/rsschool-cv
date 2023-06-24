@@ -1,4 +1,34 @@
 @import '../_mixins.scss';
 
 .footer {
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(32);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: rem(32);
+  }
+
+  &__svg {
+    height: rem(42);
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__link {
+    transition: opacity .15s var(--cubic-bezier);
+
+    @include hover {
+      opacity: .5;
+    }
+  }
 }

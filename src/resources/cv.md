@@ -63,7 +63,7 @@ int main()
 
 In 2022, he took a preparatory course.
 
-![Vitaly Koiro RSS Certificate](images/rss2022q2.webp "RSS Certificate")
+![Vitaly Koiro RSS Certificate](img/certificates/rss2022q2.webp "RSS Certificate")
 
 ## **Language**:
 

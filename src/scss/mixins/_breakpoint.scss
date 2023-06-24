@@ -1,25 +1,20 @@
 /* stylelint-disable */
 
 @mixin tablet {
-  @media (max-width: (#{rem(1110)})) {
+  @media (max-width: (#{rem(1390)})) {
     @content;
   }
 }
 
 @mixin small-tablet {
-  @media (max-width: (#{rem(920)})) {
+  @media (max-width: (#{rem(1024)})) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media (max-width: (#{rem(520)})) {
+  @media (max-width: (#{rem(768)})) {
     @content;
   }
 }
 
-// @mixin small-mobile {
-//   @media (max-width: (#{rem(374)})) {
-//     @content;
-//   }
-// }
