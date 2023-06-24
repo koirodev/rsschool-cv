@@ -1,20 +1,21 @@
-# __Vitaly Koiro__
+# **Vitaly Koiro**
 
-### __Fullstack__ web developer
+### **Fullstack** web developer
 
 <hr>
 
-## __Contact information__:
-| | |
-|-|-|
-|__Phone:__|[+375-333-935-935](tel:+375333935935 "call")|
-|__E-mail:__|[dev@koiro.pro](mailto:dev@koiro.pro "write")|
-|__Telegram:__|[@yuutacn](https://t.me/yuutacn "write")|
-|__Website:__|[koiro.pro](https://koiro.pro "visit")|
-|__Github:__|[@koirodev](https://github.com/koirodev "visit")|
+## **Contact information**:
+
+|               |                                                  |
+| ------------- | ------------------------------------------------ |
+| **Phone:**    | [+375-333-935-935](tel:+375333935935 "call")     |
+| **E-mail:**   | [dev@koiro.pro](mailto:dev@koiro.pro "write")    |
+| **Telegram:** | [@yuutacn](https://t.me/yuutacn "write")         |
+| **Website:**  | [koiro.pro](https://koiro.pro "visit")           |
+| **Github:**   | [@koirodev](https://github.com/koirodev "visit") |
 
 
-## __Briefly About Myself__:
+## **Briefly About Myself**:
  
 I am a Fullstack web developer and work for a company where I can use my knowledge and experience to build complete web applications. My knowledge of HTML, CSS, JavaScript, PHP and Laravel helps me build websites and applications with ease.
 
@@ -22,7 +23,7 @@ In my work, I strive to create user-friendly and functional web applications wit
 
 In addition, I am confident that my experience and knowledge help me create high-quality, scalable and modern web applications that can meet the needs of users.
 
-## __Skills and Proficiency__:
+## **Skills and Proficiency**:
 
 - HTML5, CSS3
 - PUG, SASS, LESS
@@ -32,7 +33,7 @@ In addition, I am confident that my experience and knowledge help me create high
 - Git (Gitlab, Github)
 - Adobe PhotoShop, Adobe Illustrator, Figma, Avocode
 
-## __Code example__:
+## **Code example**:
 
 >Hello World written in "C"
 
@@ -45,29 +46,29 @@ int main()
 }
 ```
 
-## __Experience__:
+## **Experience**:
 
 >A few of my recent works.
 
-- [__Hot huts__ (Click)](https://wp-hothuts.thedev.ru/ "visit")
+- [**Hot huts** (Click)](https://wp-hothuts.thedev.ru/ "visit")
   - CMS Wordpress
   - SEO optimization
   - Markup
-- [__ИНТЕРСТРОЙПРОЕКТ__ (Click)](https://inter-str.ru/ "visit")
+- [**ИНТЕРСТРОЙПРОЕКТ** (Click)](https://inter-str.ru/ "visit")
   - CMS Wordpress
   - SEO optimization
   - Markup
 
-## __Courses__:
+## **Courses**:
 
 In 2022, he took a preparatory course.
 
 ![Vitaly Koiro RSS Certificate](images/rss2022q2.webp "RSS Certificate")
 
-## __Language__:
+## **Language**:
 
- - __English__ - A1
- - __Russian__ - Native
+ - **English** - A1
+ - **Russian** - Native
 
 <style>
   img {
