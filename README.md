@@ -1,3 +1,3 @@
 # Vitaly Koiro CV
 
-<a href="https://koirodev.github.io/rsschool-cv/cv">Ссылка на cv.md (Клик)</a>
+[Ссылка на cv.md (Клик)](https://koirodev.github.io/rsschool-cv/cv "ты кликнешь или нет?")
