@@ -44,12 +44,12 @@ h6 {
 }
 
 ::selection {
-  background: var(--primary-color);
+  background: var(--primary-dark-color);
   color: var(--white-color);
 }
 
 ::-moz-selection {
-  background: var(--primary-color);
+  background: var(--primary-dark-color);
   color: var(--white-color);
 }
 
@@ -65,15 +65,18 @@ h6 {
 .disable-scroll {
   width: 100%;
   height: 100vh;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 .site-container {
-  // overflow: hidden;
   min-height: 100vh;
   display: flex;
   position: relative;
   flex-direction: column;
+
+  @include mobile {
+    overflow: hidden;
+  }
 
   &::before {
     content: '';
@@ -89,6 +92,13 @@ h6 {
     background-repeat: no-repeat;
     z-index: -1;
     pointer-events: none;
+
+    @include mobile {
+      top: 0;
+      left: unset;
+      right: -100px;
+      width: 100vw;
+    }
   }
 
   &::after {
@@ -105,6 +115,14 @@ h6 {
     left: -88px;
     pointer-events: none;
     z-index: 0;
+
+    @include mobile {
+      top: 0;
+      left: unset;
+      right: -330px;
+      width: 800px;
+      transform: rotate(90deg);
+    }
   }
 }
 
@@ -231,6 +249,10 @@ input::-webkit-inner-spin-button {
 
 .section {
   margin-bottom: rem(120);
+
+  @include mobile {
+    margin-bottom: rem(50);
+  }
 }
 
 

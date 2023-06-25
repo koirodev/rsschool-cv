@@ -33,6 +33,10 @@
     <header class="header">
       <div class="header__container container">
 
+        <button class="burger" onclick="burgerMenu(this);">
+          <span></span>
+        </button>
+
         <a class="header__logo logo" href="/">
           <svg class="logo__svg">
             <use xlink:href="img/svg/logo.svg#logo"></use>
@@ -88,6 +92,36 @@
 
       </div>
     </header>
+
+    <nav class="burger-menu nav" data-layer="">
+      <ul class="nav__list list">
+        <li class="nav__item" data-slow="">
+          <a class="nav__link req-link" href="#about">
+            About me
+          </a>
+        </li>
+        <li class="nav__item" data-slow="">
+          <a class="nav__link req-link" href="#projects">
+            My projects
+          </a>
+        </li>
+        <li class="nav__item" data-slow="">
+          <a class="nav__link req-link" href="#stack">
+            My stack
+          </a>
+        </li>
+        <li class="nav__item" data-slow="">
+          <a class="nav__link req-link" href="#courses">
+            Courses
+          </a>
+        </li>
+        <li class="nav__item" data-slow="">
+          <a class="nav__link req-link" href="#language">
+            Language
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <main class="main">
 
@@ -341,7 +375,7 @@
             </p>
             <ul class="courses__list list">
               <li class="courses__item">
-                <a class="courses__link" href="img/certificates/rss2022q2.webp" data-fancybox="courses" data-caption="">
+                <a class="courses__link" href="img/certificates/rss2022q2.webp" data-fancybox="courses-photo" data-caption="">
                   RS School
 
                   <img src="img/certificates/rss2022q2.webp" alt="rss2022q2" loading="lazy" width="150" height="150">
@@ -408,6 +442,7 @@
   <script src="js/lib/swiper.min.js"></script>
   <script src="js/lib/fancybox.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/burger.min.js"></script>
   <script src="js/stack-swiper.min.js"></script>
 
 </body>

@@ -30,6 +30,11 @@
       transition: opacity .15s var(--cubic-bezier),
         transform .15s var(--cubic-bezier);
 
+        @include mobile {
+          width: rem(40);
+          height: rem(40);
+        }
+
       &::after {
         content: '';
         position: absolute;

@@ -8,6 +8,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: rem(64);
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: rem(64);
+    }
   }
 
   &__subtitle {
@@ -36,6 +42,7 @@
   display: flex;
   flex-direction: row;
   gap: rem(48);
+  flex-wrap: wrap;
 
   &__item {
     position: relative;
