@@ -67,7 +67,7 @@ In 2022, he took a preparatory course.
 
 ## **Language**:
 
- - **English** - A1
+ - **English** - B1
  - **Russian** - Native
 
 <style>
