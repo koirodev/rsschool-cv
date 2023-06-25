@@ -1,0 +1,17 @@
+document.addEventListener("DOMContentLoaded", () => {
+  new Swiper('.stack__swiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    loop: false,
+    preventClicks: true,
+    slidesPerGroupAuto: true,
+    autoHeight: false,
+    grabCursor: true,
+    centerInsufficientSlides: false,
+    speed: 500
+  });
+});
