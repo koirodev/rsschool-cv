@@ -39,10 +39,10 @@
     border-radius: 2px;
 
     transition: transform var(--animation-default),
-    opacity var(--animation-default),
-    visibility var(--animation-default),
-    width var(--animation-default) var(--animation-duration),
-    rotate var(--animation-default);
+      opacity var(--animation-default),
+      visibility var(--animation-default),
+      width var(--animation-default) var(--animation-duration),
+      rotate var(--animation-default);
   }
 
   &::before {
@@ -73,10 +73,10 @@
     &::after {
       transform: translateY(0);
       transition: transform var(--animation-default),
-      opacity var(--animation-default),
-      visibility var(--animation-default),
-      width var(--animation-default),
-      rotate var(--animation-default) var(--animation-duration);
+        opacity var(--animation-default),
+        visibility var(--animation-default),
+        width var(--animation-default),
+        rotate var(--animation-default) var(--animation-duration);
     }
 
     &::before {

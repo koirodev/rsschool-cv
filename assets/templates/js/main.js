@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("DOMContentLoaded", () => {
 
   });
-  
+
 });
 
 new Swiper(".stack__swiper", {
