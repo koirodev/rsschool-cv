@@ -20,8 +20,8 @@
 
   transform: translateY(-50vh) scale(0.6);
   transition: opacity var(--animation-default),
-  visibility var(--animation-default),
-  transform var(--animation-default);
+    visibility var(--animation-default),
+    transform var(--animation-default);
 
   @include mediaLaptop {
     display: flex;
@@ -57,7 +57,7 @@
 
       transform: translateY(40px) scale(0.6);
       transition: opacity var(--animation-default),
-      transform var(--animation-default);
+        transform var(--animation-default);
 
       &_slow {
         opacity: 1;

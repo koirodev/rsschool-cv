@@ -8,16 +8,29 @@ document.addEventListener("DOMContentLoaded", () => {
   CustomEase.create("cubicDefault", ".36,.3,0,1");
 
   function currentGSAP() {
-    // if (!isMobile.any()) {
-    //   const smoother = ScrollSmoother.create({
-    //     wrapper: ".wrapper",
-    //     content: ".wrapper__content",
-    //     smooth: 1.3
-    //   });
-    // }
+    if (!isMobile.any()) {
+      const smoother = ScrollSmoother.create({
+        wrapper: ".wrapper",
+        content: ".wrapper__content",
+        smooth: 1.3
+      });
+    }
 
     // Пример использования функции LineByLineAnimation
-    // LineByLineAnimation(".section", ".section__head");
+    LineByLineAnimation(".hero", ".hero__content");
+    LineByLineAnimation(".hero", ".hero__right");
+    LineByLineAnimation(".stack", ".stack__title");
+    LineByLineAnimation(".stack", ".swiper");
+    LineByLineAnimation(".projects", ".h2");
+    LineByLineAnimation(".projects", ".item");
+    LineByLineAnimation(".about", ".about__title");
+    LineByLineAnimation(".about", ".about__photo");
+    LineByLineAnimation(".about", ".about__text");
+    LineByLineAnimation(".courses", ".courses__title");
+    LineByLineAnimation(".courses", ".courses__text");
+    LineByLineAnimation(".courses", ".courses__item");
+    LineByLineAnimation(".language", ".language__title");
+    LineByLineAnimation(".language", ".language__item");
   }
 
   // Плавное появление сайта
