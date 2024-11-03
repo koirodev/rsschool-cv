@@ -1,0 +1,201 @@
+.button {
+  --button-bg-color: var(--accent-primary-default);
+  --button-bg-color-hover: var(--accent-primary-hover-dark);
+  --button-border-color: none;
+  --button-border-color-hover: none;
+  --button-gap: #{rem(20)};
+  --button-icon-color: var(--button-text-color);
+  --button-icon-color-hover: var(--button-text-color-hover);
+  --button-min-height: #{rem(84)};
+  --button-offset: #{rem(5)};
+  --button-padding: #{rem(40)};
+  --button-text-color: var(--text-dark-100);
+  --button-text-color-hover: var(--text-light-100);
+
+  position: relative;
+  margin: 0;
+
+  padding: 0 var(--button-padding);
+  width: fit-content;
+  min-height: var(--button-min-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--button-text-color);
+  font: var(--font-btn);
+  text-decoration: none;
+
+  background-color: var(--button-bg-color);
+  border-width: 0;
+  border-style: solid;
+  border-color: var(--button-border-color);
+  border-radius: var(--radius-btn);
+  overflow: hidden;
+
+  transition: border-color var(--animation-short),
+  background-color 0s;
+
+  cursor: pointer;
+  user-select: none;
+
+  @include mediaBigDesktop {
+    --button-gap: #{big(20)};
+    --button-min-height: #{big(84)};
+    --button-offset: #{big(5)};
+    --button-padding: #{big(40)};
+  }
+
+  @include mediaDesktop {
+    --button-gap: #{rem(15)};
+    --button-min-height: #{rem(70)};
+    --button-padding: #{rem(30)};
+  }
+
+  @include mediaLaptop {
+    --button-gap: #{rem(12)};
+    --button-min-height: #{rem(58)};
+    --button-padding: #{rem(20)};
+  }
+
+  @include mediaTablet {
+    --button-gap: #{rem(10)};
+    --button-min-height: #{rem(44)};
+    --button-padding: #{rem(15)};
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: var(--button-offset);
+    left: var(--button-offset);
+    z-index: 2;
+
+    width: calc(100% - var(--button-offset) * 2);
+    height: 0;
+
+    background-color: var(--button-bg-color-hover);
+    border-radius: var(--radius-btn);
+
+    transition: width var(--animation-short),
+    height var(--animation-short),
+    bottom var(--animation-short),
+    left var(--animation-short);
+  }
+
+  &:not(:disabled):not(.disabled) {
+    @include hover {
+      background-color: var(--button-bg-color-hover);
+      border-color: var(--button-border-color-hover);
+
+      transition: border-color var(--animation-short),
+      background-color 0s var(--animation-duration-short);
+
+      &::before {
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+      }
+
+      & .button {
+        &__wrapper {
+          height: 0;
+
+          transform: translateY(calc(var(--button-min-height) / -3));
+          transition: transform var(--animation-short),
+          height var(--animation-short);
+
+          &:last-child {
+            height: 100%;
+
+            transform: translateY(0);
+            transition: transform var(--animation-duration),
+            height var(--animation-default);
+          }
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--button-gap);
+
+    overflow: hidden;
+
+    transform-origin: top center;
+    transition: height var(--animation-short),
+    transform var(--animation-short);
+
+    pointer-events: none;
+
+    &:last-child {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 3;
+      margin: auto;
+
+      height: 0;
+
+      color: var(--button-text-color-hover);
+
+      transform: translateY(calc(var(--button-min-height) / 3));
+      transform-origin: bottom center;
+      transition: transform var(--animation-short),
+      height 0.15s var(--cubic-bezier);
+
+      & .icon {
+        fill: var(--button-icon-color-hover);
+      }
+    }
+  }
+
+  &__text {
+    order: 1;
+
+    width: fit-content;
+    height: fit-content;
+    display: block;
+
+    white-space: nowrap;
+
+    &::before {
+      content: attr(data-button-text);
+    }
+  }
+
+  & .icon {
+    order: 0;
+
+    fill: var(--button-icon-color);
+  }
+
+  &:disabled,
+  &.disabled {
+    --button-bg-color: var(--system-dark-20);
+    --button-bg-color-hover: var(--system-dark-20);
+    --button-icon-color: var(--button-text-color);
+    --button-icon-color-hover: var(--button-text-color-hover);
+    --button-text-color: var(--system-dark-30);
+    --button-text-color-hover: var(--system-dark-30);
+
+    cursor: not-allowed;
+  }
+}
+
+@import "button/_primary";
+@import "button/_secondary";
+@import "button/_tertiary";
+@import "button/_fourth";
+@import "button/_small";

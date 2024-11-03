@@ -1,0 +1,47 @@
+{
+  "svguse": {
+    "scope": "html",
+    "prefix": "g-use",
+    "body": [
+      "<svg class=\"icon\">",
+      "  <use xlink:href=\"/assets/templates/img/sprite.svg#$2\"></use>",
+      "</svg>"
+    ],
+    "description": "Snippet for use svg sprites"
+  },
+  "basicswiper": {
+    "prefix": "g-swiper",
+    "body": [
+      "<div class=\"swiper $1\">",
+      "  <div class=\"swiper-wrapper\">",
+      "     <div class=\"swiper-slide\">",
+      "     </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Snippet for basic swiper structure"
+  },
+  "picture": {
+    "prefix": "g-picture",
+    "body": [
+      "<figure class=\"image\">",
+      "  <picture>",
+      "    <source srcset=\"/assets/templates/img/$1.webp\" type=\"image/webp\">",
+      "    <img src=\"/assets/templates/img/$1.png\" loading=\"lazy\" width=\"$4\" height=\"$5\" alt=\"$3\">",
+      "  </picture>",
+      "  <figcaption>$2</figcaption>",
+      "</figure>"
+    ],
+    "description": "Snippet for basic image structure"
+  },
+  "tooltip": {
+  "prefix": "g-tooltip",
+    "body": [
+      "<span class=\"tooltip\">",
+      "  <span class=\"tooltip__button\" role=\"button\"></span>",
+      "  <span class=\"tooltip__text\">$1</span>",
+      "</span>"
+    ],
+    "description": "Snippet for tooltip"
+  }
+}

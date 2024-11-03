@@ -1,0 +1,14 @@
+@mixin contain {
+  container: layout / inline-size;
+  contain: layout inline-size;
+}
+
+@mixin container($query) {
+  @media --css-container and (#{$query}) {
+    @content;
+  }
+
+  @container (#{$query}) {
+    @content;
+  }
+}

@@ -1,0 +1,54 @@
+.button.button_fourth {
+  --button-bg-color: transparent;
+  --button-bg-color-hover: var(--accent-primary-default);
+  --button-border-color: var(--stroke-dark-20);
+  --button-border-color-hover: var(--accent-primary-default);
+  --button-icon-color: var(--accent-primary-default);
+  --button-icon-color-hover: var(--button-text-color-hover);
+  --button-text-color: var(--text-dark-100);
+  --button-text-color-hover: var(--text-dark-100);
+
+  padding: 0 calc(var(--button-padding) - 1px);
+
+  border-width: 1px;
+
+  @include mediaBigDesktop {
+    padding: 0 calc(var(--button-padding) - #{big(1)});
+
+    border-width: big(1);
+  }
+
+  &:disabled,
+  &.disabled {
+    --button-bg-color: var(--system-dark-20);
+    --button-bg-color-hover: var(--system-dark-20);
+    --button-icon-color: var(--button-text-color);
+    --button-text-color: var(--system-dark-30);
+    --button-text-color-hover: var(--system-dark-30);
+
+    padding: 0 var(--button-padding);
+
+    border-width: 0;
+
+    cursor: not-allowed;
+  }
+}
+
+.section_dark,
+.dark-mode {
+  & .button.button_fourth {
+    --button-bg-color-hover: var(--accent-primary-default);
+    --button-border-color: var(--stroke-light-20);
+    --button-border-color-hover: var(--accent-primary-default);
+    --button-text-color: var(--text-light-100);
+    --button-text-color-hover: var(--text-dark-100);
+
+    &:disabled,
+    &.disabled {
+      --button-bg-color: var(--system-light-20);
+      --button-bg-color-hover: var(--system-light-20);
+      --button-text-color: var(--system-light-30);
+      --button-text-color-hover: var(--system-light-30);
+    }
+  }
+}

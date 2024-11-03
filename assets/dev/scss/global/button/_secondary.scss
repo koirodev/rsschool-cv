@@ -1,0 +1,32 @@
+.button.button_secondary {
+  --button-bg-color: var(--accent-secondary-default);
+  --button-bg-color-hover: var(--accent-secondary-hover-dark);
+  --button-text-color: var(--text-light-100);
+  --button-text-color-hover: var(--text-light-100);
+
+  &:disabled,
+  &.disabled {
+    --button-bg-color: var(--system-dark-20);
+    --button-bg-color-hover: var(--system-dark-20);
+    --button-text-color: var(--system-dark-30);
+    --button-text-color-hover: var(--system-dark-30);
+
+    cursor: not-allowed;
+  }
+}
+
+.section_dark,
+.dark-mode {
+  & .button.button_secondary {
+    --button-bg-color-hover: var(--accent-secondary-hover-light);
+    --button-text-color-hover: var(--text-dark-100);
+
+    &:disabled,
+    &.disabled {
+      --button-bg-color: var(--system-light-20);
+      --button-bg-color-hover: var(--system-light-20);
+      --button-text-color: var(--system-light-30);
+      --button-text-color-hover: var(--system-light-30);
+    }
+  }
+}

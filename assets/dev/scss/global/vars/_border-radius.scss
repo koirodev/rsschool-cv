@@ -1,0 +1,36 @@
+:root {
+  --radius-big-elements: #{rem(20)};
+  --radius-btn: #{rem(12)};
+  --radius-card: #{rem(20)};
+  --radius-card-s: #{rem(12)};
+  --radius-infinity: #{rem(1600)};
+
+  @include mediaBigDesktop {
+    --radius-big-elements: #{big(20)};
+    --radius-btn: #{big(12)};
+    --radius-card: #{big(20)};
+    --radius-card-s: #{big(12)};
+    --radius-infinity: #{big(1600)};
+  }
+
+  @include mediaDesktop {
+    --radius-big-elements: #{rem(16)};
+    --radius-btn: #{rem(8)};
+    --radius-card: #{rem(16)};
+    --radius-card-s: #{rem(8)};
+  }
+
+  @include mediaLaptop {
+    --radius-big-elements: #{rem(12)};
+    --radius-btn: #{rem(6)};
+    --radius-card: #{rem(12)};
+    --radius-card-s: #{rem(6)};
+  }
+
+  @include mediaMobile {
+    --radius-big-elements: #{rem(8)};
+    --radius-btn: #{rem(4)};
+    --radius-card: #{rem(8)};
+    --radius-card-s: #{rem(4)};
+  }
+}

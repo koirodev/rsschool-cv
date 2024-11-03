@@ -1,0 +1,20 @@
+.section_dark,
+.dark-mode {
+  & .button.button_primary {
+    --button-bg-color-hover: var(--accent-primary-hover-light);
+    --button-icon-color-hover: var(--button-text-color-hover);
+    --button-text-color-hover: var(--text-dark-100);
+
+    &:disabled,
+    &.disabled {
+      --button-bg-color: var(--system-light-20);
+      --button-bg-color-hover: var(--system-light-20);
+      --button-icon-color: var(--button-text-color);
+      --button-icon-color-hover: var(--button-text-color-hover);
+      --button-text-color: var(--system-light-30);
+      --button-text-color-hover: var(--system-light-30);
+
+      cursor: not-allowed;
+    }
+  }
+}

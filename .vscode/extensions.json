@@ -1,0 +1,3 @@
+{
+  "recommendations": ["mrmlnc.vscode-csscomb", "EditorConfig.EditorConfig", "ritwickdey.LiveServer", "dbaeumer.vscode-eslint", "rebornix.project-snippets", "rifi2k.format-html-in-php", "GitHub.copilot", "GitHub.copilot-chat", "ecmel.vscode-html-css", "kisstkondoros.vscode-gutter-preview", "VisualStudioExptTeam.vscodeintellicode", "VisualStudioExptTeam.intellicode-api-usage-examples", "Zignd.html-css-class-completion", "gulomov.vscode-modx", "DEVSENSE.phptools-vscode", "bmewburn.vscode-intelephense-client", "zobo.php-intellisense", "streetsidesoftware.code-spell-checker-russian", "streetsidesoftware.code-spell-checker"]
+}
