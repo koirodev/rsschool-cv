@@ -11,26 +11,20 @@
   }
 }
 
-@mixin mediaDesktop {
-  @media (width <= 2200px) {
-    @content;
-  }
-}
-
 @mixin mediaLaptop {
-  @media (width <= 1700px) {
+  @media (width <= 1390px) {
     @content;
   }
 }
 
 @mixin mediaTablet {
-  @media (width <= 1250px) {
+  @media (width <= 1024px) {
     @content;
   }
 }
 
 @mixin mediaMobile {
-  @media (width <= 630px) {
+  @media (width <= 768px) {
     @content;
   }
 }

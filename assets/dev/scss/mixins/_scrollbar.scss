@@ -1,10 +1,10 @@
 $track_color: var(--current-background-color);
 $thumb_color: var(--current-text-color);
-$thumb_color_hover: var(--accent-primary-default);
+$thumb_color_hover: var(--primary-color);
 $border_color: var(--current-background-color);
-$line_size: rem(14);
+$line_size: rem(10);
 $line_hight: $line_size;
-$radius: var(--radius-infinity);
+$radius: 160px;
 $offset: rem(3);
 
 @mixin scrollbar {

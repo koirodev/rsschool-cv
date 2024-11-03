@@ -1,0 +1,117 @@
+.projects {
+  width: 100%;
+
+  & .h2 {
+    margin-bottom: rem(30);
+  }
+
+  & .item {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 20/4;
+
+    border-bottom: solid 1px #F1F1F175;
+    overflow: hidden;
+
+    user-select: none;
+
+    @include mediaLaptop {
+      aspect-ratio: 20/5;
+    }
+
+    @include mediaMobile {
+      aspect-ratio: 20/10;
+    }
+
+    @include hover {
+      &::before {
+        background-size: 100% 100%;
+      }
+
+      & img {
+        filter: grayscale(0);
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    & a {
+      position: relative;
+      z-index: 1;
+
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      color: var(--light-color);
+      text-decoration: none;
+
+      & .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        gap: rem(2);
+
+        & h3 {
+          margin: 0;
+
+          color: var(--primary-color);
+          font-family: var(--font-secondary);
+          font-size: min(max(rem(24), 4vw), rem(40));
+
+          @include media(364px) {
+            font-size: rem(20);
+          }
+        }
+
+        & .type {
+          font-size: rem(12);
+        }
+
+        & .title {
+          color: var(--green-dark-color);
+          font-weight: 600;
+          line-height: 1.1;
+        }
+      }
+    }
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+
+      filter: grayscale(0.8);
+
+      transition: filter var(--animation-default);
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      z-index: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-image: linear-gradient(126deg, rgb(20, 20, 20) 0%, rgba(20, 20, 20, 0.6) 27%, rgba(255, 255, 255, 0) 100%);
+      background-size: 200% 100%;
+
+      transition: background var(--animation-default);
+    }
+  }
+}

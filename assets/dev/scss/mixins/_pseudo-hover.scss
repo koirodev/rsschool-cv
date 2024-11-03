@@ -8,14 +8,6 @@
       background-color: transparent;
       opacity: 0;
     }
-
-    @include mediaBigDesktop {
-      top: #{big(-$pixel)};
-      left: #{big(-$pixel)};
-  
-      width: calc(100% + #{big($pixel)} * 2);
-      height: calc(100% + #{big($pixel)} * 2);
-    }
   }
 
   top: -#{rem($pixel)};

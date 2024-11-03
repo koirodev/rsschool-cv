@@ -3,10 +3,23 @@
 @import "global/common/footer";
 @import "global/common/section";
 
+@import "global/typography/link";
 @import "global/typography/text";
 @import "global/typography/list";
 
-@import "global/icon";
-@import "global/button";
+@import "global/nav";
+@import "global/social";
+@import "global/burger";
+@import "global/burger-menu";
 
 @import "global/js/accordion";
+
+@import "components/sections/hero";
+@import "components/sections/stack";
+@import "components/sections/projects";
+@import "components/sections/about";
+@import "components/sections/courses";
+@import "components/sections/language";
+
+@import "components/stars";
+@import "components/contacts";

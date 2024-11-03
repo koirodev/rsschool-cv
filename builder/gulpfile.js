@@ -19,7 +19,6 @@ for (const taskPath of paths.tasks) {
 }
 
 const defaultTasks = [
-  "sass",
   "sass-global",
   "js:foundation",
   "js:process",

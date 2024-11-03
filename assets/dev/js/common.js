@@ -86,4 +86,25 @@ document.addEventListener("DOMContentLoaded", function () {
   // Фикс зума к инпутам на мобильных
   const metaViewport = document.querySelector("meta[name=viewport]");
   metaViewport.setAttribute("content", `${metaViewport.getAttribute("content")}, maximum-scale=1.0`);
+
+  document.addEventListener("DOMContentLoaded", () => {
+
+  });
+  
+});
+
+new Swiper(".stack__swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  loop: false,
+  preventClicks: true,
+  slidesPerGroupAuto: true,
+  autoHeight: false,
+  grabCursor: true,
+  centerInsufficientSlides: false,
+  speed: 500
 });

@@ -1,6 +1,6 @@
 {
-  "name": "dev0",
-  "short_name": "dev0",
+  "name": "Vitaly Koiro CV",
+  "short_name": "CV by V.K",
   "icons": [
     {
       "src": "/assets/templates/favicon/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "display": "standalone"
 }
