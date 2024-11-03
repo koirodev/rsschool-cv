@@ -10,7 +10,7 @@
 | ------------- | ----------------------------------------------------- |
 | **Phone:**    | [+375-333-935-935](tel:+375333935935 "call")          |
 | **E-mail:**   | [yuutacn@yandex.by](mailto:yuutacn@yandex.by "write") |
-| **Telegram:** | [@koirodev](https://t.me/koirodev "write")            |
+| **Telegram:** | [@koirodev](https://koirodev.t.me/ "write")           |
 | **Github:**   | [@koirodev](https://github.com/koirodev "visit")      |
 
 
