@@ -1,127 +1,23 @@
 .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding: 0;
+}
+
+:is(.h1, .h2) {
   margin: 0;
 
   padding: 0;
-  width: 100%;
-  display: block;
 
-  &_body {
-    &_M {
-      &_m {
-        font: var(--font-body-M-m);
-      }
-
-      &_r {
-        font: var(--font-body-M-r);
-      }
-
-      &_l {
-        font: var(--font-body-M-l);
-      }
-    }
-
-    &_S {
-      &_m {
-        font: var(--font-body-S-m);
-      }
-
-      &_r {
-        font: var(--font-body-S-r);
-      }
-
-      &_l {
-        font: var(--font-body-S-l);
-      }
-    }
-
-    &_XS {
-      &_m {
-        font: var(--font-body-XS-m);
-      }
-
-      &_r {
-        font: var(--font-body-XS-r);
-      }
-
-      &_l {
-        font: var(--font-body-XS-l);
-      }
-    }
-  }
-
-  &_title {
-    &_L {
-      font: var(--font-title-L);
-    }
-
-    &_M {
-      font: var(--font-title-M);
-    }
-
-    &_S {
-      font: var(--font-title-S);
-    }
-  }
-
-  &_number {
-    font: var(--font-number);
-  }
-
-  &_price {
-    font: var(--font-price);
-  }
-
-  &_btn {
-    font: var(--font-btn);
-
-    &-cap {
-      font: var(--font-btn-cap);
-      text-transform: uppercase;
-    }
-
-    &-s {
-      font: var(--font-btn-s);
-    }
-  }
-}
-
-// h1 - h6
-.h1,
-.h2,
-.h3,
-.h4 {
-  margin: 0;
-
-  padding: 0;
-  width: 100%;
-
-  &:not(summary) {
-    display: flex;
-  }
-}
-
-.h1,
-.h2 {
-  display: flex;
-  flex-direction: column;
-
-  @include mediaTablet {
-    display: block;
-  }
-
-  & > span {
-    text-indent: var(--global-text-indent);
-  }
+  color: var(--white-color);
+  font: 600 rem(16)/1.2 var(--font-secondary);
 }
 
 .h1 {
-  font: var(--font-h1);
+  font-size: min(max(rem(48), 5.5vw), rem(90));
 }
 
 .h2 {
-  font: var(--font-h2);
-}
-
-.h3 {
-  font: var(--font-h3);
+  font-size: min(max(rem(32), 5.5vw), rem(50));
 }

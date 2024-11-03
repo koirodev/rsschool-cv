@@ -1,0 +1,57 @@
+.social {
+  margin-left: auto;
+
+  @include media(703px) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: rem(32);
+  }
+
+  &__link {
+    position: relative;
+
+    padding-right: rem(30);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    @include hover {
+      & .social__text {
+        color: var(--primary-color);
+
+        background-color: var(--bg-white);
+      }
+    }
+
+    &:focus {
+      & .social__text {
+        color: var(--primary-color);
+
+        background-color: var(--bg-white);
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: rem(15);
+    right: 0;
+
+    width: rem(72);
+    height: rem(72);
+    display: flex;
+
+    mix-blend-mode: lighten;
+
+    pointer-events: none;
+    user-select: none;
+  }
+}

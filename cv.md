@@ -60,9 +60,9 @@ int main()
   - - - -
 - [**ЗГСО "ОРИОНИКС"** (Click)](https://zgso-orioniks.ru/ "visit")
   - - - -
-- [**BM (отраслевые сайты для бизнеса)** (Click)](https://bmamonts.ru/ "visit")
-    - [**Шаблон для ресторанов и кейтеринга** (Click)](https://dev33.bm-sites.ru/ "visit")
-    - [**Шаблон для мебельных магазинов** (Click)](https://dev6.bm-sites.ru/ "visit")
+- [**BM (industry websites for business)** (Click)](https://bmamonts.ru/ "visit")
+    - [**Restaurant and Catering Template (dev33)** (Click)](https://dev33.bm-sites.ru/ "visit")
+    - [**Furniture Store Template (dev6)** (Click)](https://dev6.bm-sites.ru/ "visit")
   - - - -
 - [**ORION (mobile agency)** (Click)](https://orionmobile.agency/ "visit")
 

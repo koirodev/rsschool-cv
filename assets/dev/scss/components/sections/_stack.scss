@@ -1,0 +1,108 @@
+.stack {
+  width: 100%;
+
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+  }
+
+  &__swiper {
+    width: 100%;
+
+    overflow: visible;
+
+    &-wrapper {
+      will-change: transform;
+    }
+
+    &-slide {
+      width: fit-content;
+    }
+
+    & .swiper-button-next,
+    & .swiper-button-prev {
+      width: rem(50);
+      height: rem(50);
+
+      background: rgba(48, 48, 48, 0.7);
+      border-radius: 50px;
+      backdrop-filter: blur(5px);
+
+      transition: opacity var(--animation-default),
+        transform var(--animation-default);
+
+      cursor: pointer;
+      user-select: none;
+
+      @include mediaMobile {
+        width: rem(40);
+        height: rem(40);
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: -2px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+
+        width: calc(100% - #{rem(20)});
+        height: calc(100% - #{rem(20)});
+        display: block;
+
+        background: url(../../dev/sprite/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+
+    & .swiper-button-next {
+      transform: rotate(90deg);
+
+      @include hover {
+        transform: rotate(90deg) scale(1.1);
+      }
+    }
+
+    & .swiper-button-prev {
+      transform: rotate(-90deg);
+
+      @include hover {
+        transform: rotate(-90deg) scale(1.1);
+      }
+    }
+
+    & .swiper-button-disabled {
+      opacity: 0.3;
+
+      cursor: not-allowed;
+    }
+  }
+
+  &__image {
+    width: rem(130);
+    height: rem(130);
+    display: flex;
+    object-fit: contain;
+    object-position: center;
+
+    pointer-events: none;
+    user-select: none;
+
+    &_background {
+      padding: 10px;
+      width: rem(130);
+      height: rem(130);
+
+      background: var(--white-color);
+      border-radius: rem(20);
+    }
+  }
+}

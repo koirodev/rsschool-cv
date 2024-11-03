@@ -3,7 +3,3 @@
 @function rem($pixels) {
   @return #{math.div($pixels, 16)}rem;
 }
-
-@function big($pixels) {
-  @return #{math.div($pixels, 2560) * 100}vw;
-}

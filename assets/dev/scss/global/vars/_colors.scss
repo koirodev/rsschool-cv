@@ -1,57 +1,12 @@
 :root {
-  --current-background-color: var(--text-light-100); // Техническое свойство, просто так не удалять!!!
-  --current-text-color: var(--text-dark-100); // Техническое свойство, просто так не удалять!!!
+  --current-background-color: var(--background-color); // Техническое свойство, просто так не удалять!!!
+  --current-text-color: var(--white-color); // Техническое свойство, просто так не удалять!!!
 
-  --accent-primary-default: #FFAF40;
-  --accent-primary-hover-light: #FFFFFF;
-  --accent-primary-hover-dark: #07263E;
-  --accent-secondary-default: #1675E5;
-  --accent-secondary-hover-light: #FFFFFF;
-  --accent-secondary-hover-dark: #07263E;
-
-  --text-light-100: #FFFFFF;
-  --text-light-60: #FFFFFF99;
-  --text-light-50: #FFFFFF80;
-  --text-light-40: #FFFFFF66;
-  --text-light-30: #FFFFFF4D;
-
-  --text-dark-100: #000000;
-  --text-dark-60: #00000099;
-  --text-dark-50: #00000080;
-  --text-dark-40: #00000066;
-  --text-dark-30: #0000004D;
-
-  --bg-light-100: #FFFFFF;
-  --bg-light-12: #FFFFFF1F;
-  --bg-light-8: #FFFFFF14;
-
-  --bg-dark-100: #07263E;
-  --bg-dark-90: #1A374D;
-  --bg-dark-40: #00000066;
-  --bg-dark-12: #0000001F;
-
-  --bg-grey: #F1F1F2;
-  --bg-grey-hover: #9799A6;
-
-  --bg-lightblue: #C6DAF7;
-
-  --stroke-light-100: #FFFFFF;
-  --stroke-light-70: #FFFFFFB2;
-  --stroke-light-40: #FFFFFF66;
-  --stroke-light-20: #FFFFFF33;
-  --stroke-light-10: #FFFFFF1A;
-
-  --stroke-dark-100: #000000;
-  --stroke-dark-70: #000000B2;
-  --stroke-dark-40: #00000066;
-  --stroke-dark-20: #00000033;
-  --stroke-dark-card: #CCCCCC;
-
-  --system-error: #FF634F;
-
-  --system-dark-30: #0000004D;
-  --system-dark-20: #0000001A;
-
-  --system-light-30: #FFFFFF4D;
-  --system-light-20: #FFFFFF1A;
+  --white-color: #D9D9D9;
+  --black-color: #0D0D0D;
+  --black-color-30: rgba(13, 13, 13, 0.3);
+  --primary-color: #29db91;
+  --primary-dark-color: #117a4e;
+  --background-color: var(--black-color);
+  --transparent-color: #00000000;
 }

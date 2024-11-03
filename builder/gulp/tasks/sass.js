@@ -24,15 +24,6 @@ export default function (gulp, config, paths) {
     autoprefixer({ overrideBrowserslist: config.autoprefixerConfig })
   ]
 
-  gulp.task("sass", function () {
-    return gulp.src([`${config.root}/dev/scss/*/*/*/*.scss`, `!${config.root}/dev/scss/*/*/*/_*`])
-      .pipe(sourcemaps.init())
-      .pipe(postcss(postcssPlugins)).on("error", notify.onError({ title: "Style" }))
-      .pipe(rename({ extname: ".css" }))
-      .pipe(sourcemaps.write())
-      .pipe(gulp.dest(`${config.root}/templates/css/`));
-  });
-
   gulp.task("sass-global", function () {
     return gulp.src(`${config.root}/dev/scss/main.scss`)
       .pipe(sourcemaps.init())

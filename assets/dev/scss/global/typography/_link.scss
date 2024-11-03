@@ -1,0 +1,59 @@
+.link {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  background-image: linear-gradient(var(--white-color), var(--white-color));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 1px;
+  outline: none;
+
+  transition: background-size var(--animation-default),
+    color var(--animation-default);
+
+  cursor: pointer;
+
+  @include hover {
+    color: var(--primary-color-dark);
+
+    background-size: 100% 1px;
+  }
+
+  &:focus {
+    color: var(--primary-color-dark);
+
+    background-size: 100% 1px;
+  }
+}
+
+.req-link {
+  padding: rem(4) rem(16);
+  width: fit-content;
+  display: flex;
+
+  color: var(--white-color);
+  font: 400 rem(16)/1 var(--font-secondary);
+  text-align: center;
+  text-decoration: none;
+
+  background-color: var(--transparent-color);
+  border-radius: rem(4);
+  outline: none;
+
+  transition: background var(--animation-default),
+    color var(--animation-default);
+
+  cursor: pointer;
+
+  @include hover {
+    color: var(--black-color);
+
+    background: var(--white-color);
+  }
+
+  &:focus {
+    color: var(--black-color);
+
+    background: var(--white-color);
+  }
+}

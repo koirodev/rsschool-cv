@@ -14,7 +14,7 @@
   -webkit-text-size-adjust: 100%;
 
   scroll-behavior: smooth;
-  scroll-padding: calc(var(--global-header-height) + var(--grid-row-gap, 10px));
+  scroll-padding: calc(var(--global-header-height) + 10px);
 }
 
 .main {
@@ -26,13 +26,13 @@
 ::selection {
   color: var(--current-background-color);
 
-  background: var(--accent-primary-default);
+  background: var(--current-text-color);
 }
 
 ::-moz-selection {
   color: var(--current-background-color);
 
-  background: var(--accent-primary-default);
+  background: var(--current-text-color);
 }
 
 .page__body {
@@ -173,5 +173,17 @@
   &_show {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.collab {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(30);
+
+  @include media(1060px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 }

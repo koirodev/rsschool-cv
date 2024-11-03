@@ -1,0 +1,45 @@
+.stars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: rem(48);
+
+  &__item {
+    position: relative;
+
+    padding-left: rem(44);
+    display: flex;
+    flex-direction: column;
+
+    color: var(--white-color);
+    font-family: var(--font-primary);
+    font-size: rem(16);
+    line-height: 1.2;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -1.25rem;
+      left: 0;
+
+      width: 2rem;
+      height: 3.5rem;
+
+      background-color: var(--white-color);
+
+      mask-image: url(../../dev/sprite/star.svg);
+      mask-position: center;
+      mask-repeat: no-repeat;
+      mask-size: contain;
+    }
+  }
+
+  &__number {
+    color: var(--white-color);
+    font-family: var(--font-secondary);
+    font-size: rem(36);
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}

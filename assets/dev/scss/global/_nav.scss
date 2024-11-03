@@ -1,0 +1,13 @@
+.nav {
+  @include mediaLaptop {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: rem(8);
+  }
+}
