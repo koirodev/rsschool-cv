@@ -16,7 +16,7 @@
 
 ## **Briefly About Myself**:
 
-Hello everyone. My name is Vitaly Koiro!!
+Hello everyone. My name is Vitaly Koiro!
 
 I am a web developer with over two years of commercial experience in creating, optimizing, and supporting websites. My strengths include both frontend and backend development, with a deep understanding of working with popular CMS platforms like WordPress, OpenCart, and MODx. I have successfully completed projects by adapting solutions to meet clients' unique requirements, creating and customizing themes and plugins, and integrating external services and APIs to enhance website functionality.
 
