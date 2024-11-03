@@ -1,7 +1,0 @@
-:root {
-  --blur-15: blur(7.5px);
-
-  @include mediaBigDesktop {
-    --blur-15: blur(#{big(7.5)});
-  }
-}
