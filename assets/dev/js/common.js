@@ -83,9 +83,6 @@ function debounce(func, wait) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Фикс зума к инпутам на мобильных
-  const metaViewport = document.querySelector("meta[name=viewport]");
-  metaViewport.setAttribute("content", `${metaViewport.getAttribute("content")}, maximum-scale=1.0`);
 
   document.addEventListener("DOMContentLoaded", () => {
 

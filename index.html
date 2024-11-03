@@ -24,57 +24,59 @@
 </head>
 
 <body class="page__body">
+  <header class="header">
+    <div class="header__container container">
+      <button class="burger" onclick="burgerMenu(this);" type="button">
+        <span></span>
+        <span class="pseudo-text">Menu</span>
+      </button>
+      <a class="header__logo logo" href="https://koirodev.t.me/" target="_blank">
+        <svg class="logo__svg">
+          <use xlink:href="assets/templates/img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list list">
+          <li class="nav__item">
+            <a class="nav__link req-link" href="#about" data-scroll-to>About me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link req-link" href="#projects" data-scroll-to>My projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link req-link" href="#stack" data-scroll-to>My stack</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link req-link" href="#courses" data-scroll-to>Courses</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link req-link" href="#language" data-scroll-to>Language</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="social">
+        <ul class="social__list list">
+          <li class="social__item">
+            <a class="social__link " href="https://koirodev.t.me/" target="_blank">
+              <span class="social__text req-link">Telegram</span>
+              <img class="social__icon" src="assets/templates/img/icon/warning.webp" alt="jojo" width="72"
+                height="72">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://github.com/koirodev" target="_blank">
+              <span class="social__text req-link">Github</span>
+              <img class="social__icon" src="assets/templates/img/icon/cube.webp" alt="jojo" width="72" height="72">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
   <div class="wrapper">
     <div class="wrapper__content">
-      <header class="header">
-        <div class="header__container container">
-          <button class="burger" onclick="burgerMenu(this);" type="button">
-            <span></span>
-            <span class="pseudo-text">Menu</span>
-          </button>
-          <a class="header__logo logo" href="https://koirodev.t.me/" target="_blank">
-            <svg class="logo__svg">
-              <use xlink:href="assets/templates/img/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <nav class="nav">
-            <ul class="nav__list list">
-              <li class="nav__item">
-                <a class="nav__link req-link" href="#about">About me</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link req-link" href="#projects">My projects</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link req-link" href="#stack">My stack</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link req-link" href="#courses">Courses</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link req-link" href="#language">Language</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="social">
-            <ul class="social__list list">
-              <li class="social__item">
-                <a class="social__link " href="https://koirodev.t.me/" target="_blank">
-                  <span class="social__text req-link">Telegram</span>
-                  <img class="social__icon" src="assets/templates/img/icon/warning.webp" alt="jojo" width="72" height="72">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="https://github.com/koirodev" target="_blank">
-                  <span class="social__text req-link">Github</span>
-                  <img class="social__icon" src="assets/templates/img/icon/cube.webp" alt="jojo" width="72" height="72">
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </header>
 
       <main class="main">
 
@@ -180,10 +182,12 @@
             <div class="swiper stack__swiper">
               <div class="swiper-wrapper stack__swiper-wrapper">
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/html.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/html.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/css.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/css.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
                   <img class="stack__image stack__image_background" src="assets/templates/img/stack/sass.svg" alt="jojo"
@@ -197,51 +201,60 @@
                     height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image stack__image_background" src="assets/templates/img/stack/jquery.svg" alt="jojo"
-                    width="100" height="100">
+                  <img class="stack__image stack__image_background" src="assets/templates/img/stack/jquery.svg"
+                    alt="jojo" width="100" height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image stack__image_background" src="assets/templates/img/stack/nodejs.svg" alt="jojo"
-                    width="100" height="100">
+                  <img class="stack__image stack__image_background" src="assets/templates/img/stack/nodejs.svg"
+                    alt="jojo" width="100" height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/react.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/react.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/redux.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/redux.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/php.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/php.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
                   <img class="stack__image" src="assets/templates/img/stack/laravel.svg" alt="jojo" width="100"
                     height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/python.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/python.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/git.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/git.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/figma.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/figma.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
                   <img class="stack__image" src="assets/templates/img/stack/wordpress.svg" alt="jojo" width="100"
                     height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image stack__image_background" src="assets/templates/img/stack/opencart.svg" alt="jojo"
-                    width="100" height="100">
+                  <img class="stack__image stack__image_background" src="assets/templates/img/stack/opencart.svg"
+                    alt="jojo" width="100" height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/bitrix.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/bitrix.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/joomla.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/joomla.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
                 <div class="swiper-slide stack__swiper-slide">
-                  <img class="stack__image" src="assets/templates/img/stack/drupal.svg" alt="jojo" width="100" height="100">
+                  <img class="stack__image" src="assets/templates/img/stack/drupal.svg" alt="jojo" width="100"
+                    height="100">
                 </div>
               </div>
               <div class="swiper-button-next"></div>
@@ -263,7 +276,8 @@
             </a>
           </article>
           <article class="projects__item item">
-            <img loading="lazy" width="1170" height="350" src="assets/templates/img/projects/2.webp" alt="ЗГСО ОРИОНИКС">
+            <img loading="lazy" width="1170" height="350" src="assets/templates/img/projects/2.webp"
+              alt="ЗГСО ОРИОНИКС">
             <a href="https://zgso-orioniks.ru/" target="_blank">
               <div class="container">
                 <h3 class="title text">ЗГСО "ОРИОНИКС"</h3>
@@ -312,20 +326,35 @@
           <div class="about__container container">
             <h2 class="h2 about__title">Briefly About Myself</h2>
             <a class="about__photo" href="assets/templates/img/vitaly.webp" data-fancybox="gallery">
-              <img src="assets/templates/img/vitaly.jpg" alt="Vitaly Koiro photo" width="250" height="250" loading="lazy">
+              <img src="assets/templates/img/vitaly.jpg" alt="Vitaly Koiro photo" width="250" height="250"
+                loading="lazy">
             </a>
             <p class="about__text text">
               Hello everyone. My name is Vitaly Koiro!
               <br><br>
-              I am a web developer with over two years of commercial experience in creating, optimizing, and supporting websites. My strengths include both frontend and backend development, with a deep understanding of working with popular CMS platforms like WordPress, OpenCart, and MODx. I have successfully completed projects by adapting solutions to meet clients' unique requirements, creating and customizing themes and plugins, and integrating external services and APIs to enhance website functionality.
+              I am a web developer with over two years of commercial experience in creating, optimizing, and supporting
+              websites. My strengths include both frontend and backend development, with a deep understanding of working
+              with popular CMS platforms like WordPress, OpenCart, and MODx. I have successfully completed projects by
+              adapting solutions to meet clients' unique requirements, creating and customizing themes and plugins, and
+              integrating external services and APIs to enhance website functionality.
               <br><br>
-              My technical skills include using the JavaScript library GreenSock (GSAP) to create animations, working with databases, and automating processes with Cron. I have implemented version control with Git, developed CI/CD processes, established coding standards, and improved team development workflows.
+              My technical skills include using the JavaScript library GreenSock (GSAP) to create animations, working
+              with databases, and automating processes with Cron. I have implemented version control with Git, developed
+              CI/CD processes, established coding standards, and improved team development workflows.
               <br><br>
-              I am also passionate about teaching and mentoring, with experience in training new employees, conducting retrospectives, and organizing meetups for developers. My goal is to continuously improve development processes and implement modern technologies to create high-quality and secure web solutions.
+              I am also passionate about teaching and mentoring, with experience in training new employees, conducting
+              retrospectives, and organizing meetups for developers. My goal is to continuously improve development
+              processes and implement modern technologies to create high-quality and secure web solutions.
               <br><br>
-              I am a creative individual with the ability to find unconventional solutions and apply modern approaches in web development. Additionally, I have skills in working with Figma, enabling me to collaborate effectively with designers, make adjustments to layouts, and adapt designs to project needs, ensuring consistency and visual appeal in the final product.
+              I am a creative individual with the ability to find unconventional solutions and apply modern approaches
+              in web development. Additionally, I have skills in working with Figma, enabling me to collaborate
+              effectively with designers, make adjustments to layouts, and adapt designs to project needs, ensuring
+              consistency and visual appeal in the final product.
               <br><br>
-              Furthermore, I actively engage in identifying and mitigating vulnerabilities on websites, including SQLi, SSTI, CSRF, XSS, and others to ensure their security. My experience with Docker has allowed me to develop and configure environments for testing and deployment, and with Gulp, I have automated project build and optimization processes.
+              Furthermore, I actively engage in identifying and mitigating vulnerabilities on websites, including SQLi,
+              SSTI, CSRF, XSS, and others to ensure their security. My experience with Docker has allowed me to develop
+              and configure environments for testing and deployment, and with Gulp, I have automated project build and
+              optimization processes.
             </p>
           </div>
         </section>
@@ -337,21 +366,22 @@
               <h2 class="h2 courses__title">
                 Courses
               </h2>
-              <p class="courses__text">
+              <p class="courses__text text">
                 In 2022, he took a preparatory course.
               </p>
               <ul class="courses__list list">
                 <li class="courses__item">
-                  <a class="courses__link" href="assets/templates/img/certificates/rss2022q2.webp" data-fancybox="courses-photo" data-caption="">
+                  <a class="courses__link" href="assets/templates/img/certificates/rss2022q2.webp"
+                    data-fancybox="courses-photo" data-caption="">
                     RS School
-  
-                    <img src="assets/templates/img/certificates/rss2022q2.webp" alt="rss2022q2" loading="lazy" width="150" height="150">
+                    <img src="assets/templates/img/certificates/rss2022q2.webp" alt="rss2022q2" loading="lazy"
+                      width="150" height="150">
                   </a>
                 </li>
               </ul>
             </div>
           </section>
-  
+
           <section class="language section" id="language">
             <div class="language__container">
               <h2 class="h2 language__title">
@@ -379,60 +409,60 @@
               </ul>
             </div>
           </section>
-          
+
         </div>
 
       </main>
 
+      <footer class="footer">
+        <div class="footer__container container">
+          <p class="copyright">
+            Created in 2024 &copy;
+          </p>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a class="footer__link" href="https://rs.school/js/" target="_blank">
+                <img class="footer__svg" src="/assets/templates/img/svg/rss.svg" loading="lazy" width="42" height="42"
+                  alt="jojo">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="https://github.com/koirodev" target="_blank">
+                <img class="footer__svg" src="/assets/templates/img/svg/github-mark.svg" loading="lazy" width="42"
+                  height="42" alt="jojo">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      
     </div>
   </div>
-
-  <footer class="footer">
-    <div class="footer__container container">
-      <p class="copyright">
-        Created in 2024 &copy;
-      </p>
-      <ul class="footer__list list">
-        <li class="footer__item">
-          <a class="footer__link" href="https://rs.school/js/" target="_blank">
-            <img class="footer__svg" src="/assets/templates/img/svg/rss.svg" loading="lazy" width="42" height="42"
-              alt="jojo">
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="https://github.com/koirodev" target="_blank">
-            <img class="footer__svg" src="/assets/templates/img/svg/github-mark.svg" loading="lazy" width="42"
-              height="42" alt="jojo">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
 
   <nav class="burger-menu nav" data-layer>
     <ul class="nav__list list">
       <li class="nav__item" data-slow>
-        <a class="nav__link req-link" href="#about">
+        <a class="nav__link req-link" href="#about" data-scroll-to>
           About me
         </a>
       </li>
       <li class="nav__item" data-slow>
-        <a class="nav__link req-link" href="#projects">
+        <a class="nav__link req-link" href="#projects" data-scroll-to>
           My projects
         </a>
       </li>
       <li class="nav__item" data-slow>
-        <a class="nav__link req-link" href="#stack">
+        <a class="nav__link req-link" href="#stack" data-scroll-to>
           My stack
         </a>
       </li>
       <li class="nav__item" data-slow>
-        <a class="nav__link req-link" href="#courses">
+        <a class="nav__link req-link" href="#courses" data-scroll-to>
           Courses
         </a>
       </li>
       <li class="nav__item" data-slow>
-        <a class="nav__link req-link" href="#language">
+        <a class="nav__link req-link" href="#language" data-scroll-to>
           Language
         </a>
       </li>
